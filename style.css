@@ -480,9 +480,25 @@ a,
   color: #1500FF;
 }
 
+.color-accent {
+  background-color: #1500FF;
+  color: #fff;
+}
+
 .text-color-accent-alt,
 .orange-sherbert-face {
   color: #ff0033;
+}
+
+.color-accent-alt {
+  background-color: #ff0033;
+  color: #fff;
+}
+
+strong.color-accent,
+strong.color-accent-alt {
+  border-radius: 2px;
+  padding: 0 0.22rem
 }
 
 [role='banner'] {
@@ -532,7 +548,7 @@ main {
 
 main p {
   font-size: 1.45rem;
-  line-height: 1.33;
+  line-height: 1.45;
   margin-bottom: 2.6rem;
   margin-left: auto;
   margin-right: auto;
@@ -540,10 +556,10 @@ main p {
 }
 
 .point-laws {
-  font-size: 2.4rem;
-  letter-spacing: -0.08rem;
+  font-size: 2.8rem;
+  letter-spacing: -0.09rem;
   margin-top: 1.8rem;
-  max-width: 20rem;
+  max-width: 23rem;
   padding: 0 0.2rem;
 }
 
@@ -552,12 +568,13 @@ main p {
   font-size: 80%;
 }
 
-.point-laws::after {
+.point-laws::after,
+.pledge-container::before {
   background-color: #1500FF;
   content: '';
   display: block;
   height: 6px;
-  margin: 8vw auto;
+  margin: 8.5vw auto;
   width: 50%;
 }
 
@@ -571,7 +588,7 @@ main p {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  font-size: 5.8vw;
+  font-size: 5.6vw;
   font-weight: 900;
   list-style: none;
   margin: 0;
@@ -582,16 +599,20 @@ main p {
 .the-issues li {
   background-color: #1500FF;
   box-sizing: border-box;
+  flex-grow: 1;
   margin-top: 1vw;
   margin-left: 1vw;
-  padding: 0.5vw 1.5vw 1.25vw 1.5vw;
-  flex-grow: 1;
+  padding: 2.25vw 1vw 2.5vw 1vw;
 }
 
 .need-to-vote {
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: -0.08rem;
   padding: 0 1rem;
+}
+
+.pledge-container .subsection-heading {
+  margin-top: 3rem;
 }
 
 .the-pledge {
@@ -599,20 +620,22 @@ main p {
   border-left: 6px solid #1500FF;
   font-family: georgia, serif;
   font-style: italic;
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 2rem 0.5rem;
   text-align: left;
 }
 
 .the-pledge p {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  padding: 1rem 1.4rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  padding: 1.2rem 1.1rem;
+}
+
+.signup-container .subsection-heading {
+  font-size: 0.8rem;
 }
 
 .pledge-block {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-  margin: 0 0.5rem;
   text-align: left;
 }
 
@@ -620,26 +643,42 @@ main p {
   border: 0;
   box-shadow: 0 0 0 transparent;
   font-family: 'Overpass', sans-serif;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
-.pledge-block input {
+.gwb-label {
+  font-weight: 900;
+}
+
+.gwb-label sup {
+  font-weight: 300;
+}
+
+.pledge-block .gwb-submit {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.gwb-input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 2px;
   font-family: 'Overpass', sans-serif;
 }
 
 [role='contentinfo'] {
-  padding: 1rem 1.6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 [role='contentinfo'] p {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 [role='contentinfo'] .thegroundwork {
-  font-size: 80%;
+  font-size: 75%;
   font-weight: 900;
 }
